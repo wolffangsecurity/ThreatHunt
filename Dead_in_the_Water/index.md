@@ -50,10 +50,6 @@ DeviceLogonEvents
 - Reference: [T1078.002: Valid Accounts - Domain Accounts](https://attack.mitre.org/techniques/T1078/002/)
 - `backup-admin`
 
-KQL Query:
-
-Go back and modify yhe query
-
 -----------
 ####  **FLAG 4: DISCOVERY - Directory Enumeration**
 - Findings: File system enumeration reveals backup locations and valuable targets for destruction.
