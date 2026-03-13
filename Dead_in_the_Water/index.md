@@ -191,7 +191,7 @@ DeviceProcessEvents
 ![image](images/Pasted%20image%2020260312142734.png)
 
 --------
-#### **FLAG 12: IMPACT - Service Disabled*
+#### **FLAG 12: IMPACT - Service Disabled**
 - Findings: Disabling a service prevents it from starting at boot - this SURVIVES a reboot.
 - Reference: [T1489: Service Stop](https://attack.mitre.org/techniques/T1489/)  
 - `systemctl disable cron`
@@ -234,7 +234,7 @@ DeviceProcessEvents
 
 -----------
 #### **FLAG 15: EXECUTION - Malicious Payload**
-- Finding: Identifying the payload enables threat hunting across the environment.
+- Findings: Identifying the payload enables threat hunting across the environment.
 - **Reference:** [T1204.002: User Execution - Malicious File](https://attack.mitre.org/techniques/T1204/002/)
 - `silentlynx.exe`
 
@@ -271,7 +271,7 @@ DeviceProcessEvents
 
 --------
 #### **FLAG 18: DEFENSE EVASION - Process Termination**
-- Finding: Certain processes lock files and must be terminated before encryption can succeed.
+- Findings: Certain processes lock files and must be terminated before encryption can succeed.
 - Reference: [T1562.001: Impair Defenses - Disable or Modify Tools](https://attack.mitre.org/techniques/T1562/001/)  
 
 
@@ -287,7 +287,7 @@ DeviceProcessEvents
 
 -------
 #### **FLAG 19: IMPACT - Recovery Point Deletion**
-- Finding: Recovery points enable rapid file recovery without external backups.
+- Findings: Recovery points enable rapid file recovery without external backups.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)  
 - `"vssadmin.exe" delete shadows /all /quiet`
 
@@ -302,7 +302,7 @@ DeviceProcessEvents
 
 --------------
 #### **FLAG 20: IMPACT - Storage Limitation**
-- Finding: Limiting storage prevents new recovery points from being created.
+- Findings: Limiting storage prevents new recovery points from being created.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)
 - `"vssadmin.exe" resize shadowstorage /for=C: /on=C: /maxsize=401MB`
 
@@ -317,7 +317,7 @@ DeviceProcessEvents
 
 ---------
 #### **FLAG 21: IMPACT - Recovery Disabled**
-- Finding: Windows recovery features enable automatic system repair after corruption.
+- Findings: Windows recovery features enable automatic system repair after corruption.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)  
 - `"bcdedit" /set {default} recoveryenabled No`
 
@@ -333,7 +333,7 @@ DeviceProcessEvents
 
 -----------
 #### **FLAG 22: IMPACT - Catalog Deletion**
-- Finding: Backup catalogues track available restore points and backup versions.
+- Findings: Backup catalogues track available restore points and backup versions.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)
 - `"wbadmin" delete catalog -quiet`
 ![image](images/Pasted%20image%2020260312165858.png)
@@ -347,7 +347,7 @@ DeviceProcessEvents
 ---------
 ### PHASE 4: PERSISTENCE (FLAGS 23-24)  
 #### FLAG 23: PERSISTENCE - Registry Autorun
-- Finding: Registry keys can execute programs automatically at system startup.
+- Findings: Registry keys can execute programs automatically at system startup.
 - Reference: [T1547.001: Registry Run Keys / Startup Folder](https://attack.mitre.org/techniques/T1547/001/)  
 - `silentlynx.exe`
 
@@ -382,7 +382,7 @@ DeviceProcessEvents
 ------------
 ### PHASE 5: ANTI-FORENSICS (FLAG 25)  
 #### FLAG 25: DEFENSE EVASION - Journal Deletion
-- Finding: File system journals track changes and are valuable for forensic analysis.
+- Findings: File system journals track changes and are valuable for forensic analysis.
 - Reference: [T1070.004: Indicator Removal on Host - File Deletion](https://attack.mitre.org/techniques/T1070/004/)
 - `"fsutil.exe" usn deletejournal /D C:`
 
@@ -400,7 +400,7 @@ DeviceProcessEvents
 ----------
 ### PHASE 6: RANSOMWARE SUCCESS (FLAG 26)  
 #### **FLAG 26: IMPACT - Ransom Note**
-- Finding: Ransom notes communicate payment instructions and indicate successful encryption.
+- Findings: Ransom notes communicate payment instructions and indicate successful encryption.
 - Reference:" [T1486: Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/)
 - 
 
