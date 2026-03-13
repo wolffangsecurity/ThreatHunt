@@ -28,7 +28,7 @@ DeviceProcessEvents
 ----------
 #### **FLAG 2: LATERAL MOVEMENT - Attack Source**
 - Findings: Identifying the attack source enables network segmentation and containment.
-- Reference: [T1021.004: Remote Services - SSH](https://attack.mitre.org/techniques/T1021/004/
+- Reference: [T1021.004: Remote Services - SSH](https://attack.mitre.org/techniques/T1021/004/)
 - IP Address: `10.1.0.108`
 
 **KQL Query: Find Attacker's IP**
