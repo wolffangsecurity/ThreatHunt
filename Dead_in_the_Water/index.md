@@ -88,7 +88,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![image](images/Pasted%20mage%2020260312081615.png)
+![image](images/Pasted%20image%2020260312081615.png)
 
 ----------
 
@@ -223,7 +223,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![image](images/Pasted%20/image%2020260312150146.png)
+![image](images/Pasted%20image%2020260312150146.png)
 
 ------
 #### **FLAG 14: LATERAL MOVEMENT - Deployment Command**
@@ -254,7 +254,7 @@ DeviceProcessEvents
 
 ```
 
-![image](images/Pasted%20/image%2020260312152936.png)
+![image](images/Pasted%20image%2020260312152936.png)
 
 -------
 #### **FLAG 17: IMPACT - Backup Engine Stopped**
@@ -285,7 +285,7 @@ DeviceProcessEvents
 | sort by Timestamp asc
 
 ```
-![image](images/Pasted%20/image%2020260312163115.png)
+![image](images/Pasted%20image%2020260312163115.png)
 
 -------
 #### **FLAG 19: IMPACT - Recovery Point Deletion**
@@ -300,7 +300,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![image][Pasted%20image%2020260312163648.png]]
+![image](Pasted%20image%2020260312163648.png)
 
 --------------
 #### **FLAG 20: IMPACT - Storage Limitation**
