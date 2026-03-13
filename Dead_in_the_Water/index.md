@@ -300,7 +300,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![image](Pasted%20image%2020260312163648.png)
+![image](images/Pasted%20image%2020260312163648.png)
 
 --------------
 #### **FLAG 20: IMPACT - Storage Limitation**
@@ -315,7 +315,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![image](Pasted%20image%2020260312164539.png)
+![image](images/Pasted%20image%2020260312164539.png)
 
 ---------
 #### **FLAG 21: IMPACT - Recovery Disabled**
@@ -331,14 +331,14 @@ DeviceProcessEvents
 | sort by Timestamp asc
 
 ```
-![image](Pasted%20image%2020260312165230.png)
+![image](images/Pasted%20image%2020260312165230.png)
 
 -----------
 #### **FLAG 22: IMPACT - Catalog Deletion**
 - Finding: Backup catalogues track available restore points and backup versions.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)
 - `"wbadmin" delete catalog -quiet`
-![image](Pasted%20image%2020260312165858.png)
+![image](images/Pasted%20image%2020260312165858.png)
 
 ```SQL
 DeviceProcessEvents
@@ -362,7 +362,7 @@ DeviceRegistryEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, RegistryValueName, RegistryKey, ActionType
 | sort by Timestamp asc
 ```
-![image](Pasted%20image%2020260312173218.png)
+![image](images/Pasted%20image%2020260312173218.png)
 
 ---------
 #### **FLAG 24: PERSISTENCE - Scheduled Execution**
@@ -379,7 +379,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, InitiatingProcessVersionInfoInternalFileName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![image](Pasted%20image%2020260312174606.png)
+![image](images/Pasted%20image%2020260312174606.png)
 
 ------------
 ### PHASE 5: ANTI-FORENSICS (FLAG 25)  
