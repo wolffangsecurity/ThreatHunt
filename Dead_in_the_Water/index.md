@@ -22,8 +22,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-
-
+![image](images/Pasted%20image%2020260312071954.png)
 
 
 ----------
@@ -43,7 +42,7 @@ DeviceLogonEvents
 | project Timestamp, DeviceName, AccountName,RemoteIP, RemotePort, ActionType, InitiatingProcessCommandLine, IsLocalAdmin, LogonType, Protocol
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312075206.png]]
+![image](images/Pasted%20image%2020260312075206.png)
 
 ---------
 #### **FLAG 3: CREDENTIAL ACCESS - Compromised Account**
@@ -71,7 +70,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312081312.png]]
+![image](images/Pasted%20image%2020260312081312.png)
 
 ----------
 #### **FLAG 5: DISCOVERY - File Search**
@@ -89,7 +88,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312081615.png]]
+![image](images/Pasted%20mage%2020260312081615.png)
 
 ----------
 
@@ -106,7 +105,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312082902.png]]
+![image](images/Pasted%20image%2020260312082902.png)
 
 -----------
 #### **FLAG 7: DISCOVERY - Scheduled Job Reconnaissance**
@@ -123,7 +122,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312083320.png]]
+![image](images/Pasted%20image%2020260312083320.png)
 
 ----------
 #### **FLAG 8: COMMAND AND CONTROL - Tool Transfer**
@@ -156,7 +155,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312135834.png]]
+![image](images/Pasted%20image%2020260312135834.png)
 
 --------
 -------------
@@ -191,7 +190,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312142734.png]]
+![image](images/Pasted%20image%2020260312142734.png)
 
 --------
 #### **FLAG 12: IMPACT - Service Disabled*
@@ -208,7 +207,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312143828.png]]
+![image](images/Pasted%20image%2020260312143828.png)
 
 ------
 ### **PHASE 2: WINDOWS RANSOMWARE DEPLOYMENT (FLAGS 13-15)**  
@@ -224,7 +223,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312150146.png]]
+![image](images/Pasted%20/image%2020260312150146.png)
 
 ------
 #### **FLAG 14: LATERAL MOVEMENT - Deployment Command**
@@ -255,7 +254,7 @@ DeviceProcessEvents
 
 ```
 
-![[Pasted image 20260312152936.png]]
+![image](images/Pasted%20/image%2020260312152936.png)
 
 -------
 #### **FLAG 17: IMPACT - Backup Engine Stopped**
@@ -270,7 +269,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312162402.png]]
+![image](images/Pasted%20image%2020260312162402.png)
 
 --------
 #### **FLAG 18: DEFENSE EVASION - Process Termination**
@@ -286,7 +285,7 @@ DeviceProcessEvents
 | sort by Timestamp asc
 
 ```
-![[Pasted image 20260312163115.png]]
+![image](images/Pasted%20/image%2020260312163115.png)
 
 -------
 #### **FLAG 19: IMPACT - Recovery Point Deletion**
@@ -301,7 +300,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312163648.png]]
+![image][Pasted%20image%2020260312163648.png]]
 
 --------------
 #### **FLAG 20: IMPACT - Storage Limitation**
@@ -316,7 +315,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312164539.png]]
+![image](Pasted%20image%2020260312164539.png)
 
 ---------
 #### **FLAG 21: IMPACT - Recovery Disabled**
@@ -332,14 +331,14 @@ DeviceProcessEvents
 | sort by Timestamp asc
 
 ```
-![[Pasted image 20260312165230.png]]
+![image](Pasted%20image%2020260312165230.png)
 
 -----------
 #### **FLAG 22: IMPACT - Catalog Deletion**
 - Finding: Backup catalogues track available restore points and backup versions.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)
 - `"wbadmin" delete catalog -quiet`
-![[Pasted image 20260312165858.png]]
+![image](Pasted%20image%2020260312165858.png)
 
 ```SQL
 DeviceProcessEvents
@@ -363,7 +362,7 @@ DeviceRegistryEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, RegistryValueName, RegistryKey, ActionType
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312173218.png]]
+![image](Pasted%20image%2020260312173218.png)
 
 ---------
 #### **FLAG 24: PERSISTENCE - Scheduled Execution**
@@ -380,7 +379,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, InitiatingProcessVersionInfoInternalFileName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312174606.png]]
+![image](Pasted%20image%2020260312174606.png)
 
 ------------
 ### PHASE 5: ANTI-FORENSICS (FLAG 25)  
@@ -398,7 +397,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, InitiatingProcessVersionInfoInternalFileName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312175135.png]]
+![image](images/Pasted%20image%2020260312175135.png)
 
 ----------
 ### PHASE 6: RANSOMWARE SUCCESS (FLAG 26)  
@@ -415,4 +414,4 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, InitiatingProcessVersionInfoInternalFileName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312175714.png]]
+![image](images/Pasted%20image%2020260312175714.png)
