@@ -233,7 +233,8 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312150146.png]]
+<img width="1149" height="121" alt="Pasted image 20260312150146" src="https://github.com/user-attachments/assets/0f501ecc-27a9-4a93-8e52-8391f4124264" />
+
 
 ------
 #### **FLAG 14: LATERAL MOVEMENT - Deployment Command**
@@ -264,7 +265,8 @@ DeviceProcessEvents
 
 ```
 
-![[Pasted image 20260312152936.png]]
+<img width="781" height="114" alt="Pasted image 20260312152936" src="https://github.com/user-attachments/assets/e3c7a6c7-7d75-4ea4-aa9a-539834b854f0" />
+
 
 -------
 #### **FLAG 17: IMPACT - Backup Engine Stopped**
@@ -279,7 +281,8 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312162402.png]]
+<img width="783" height="159" alt="Pasted image 20260312162402" src="https://github.com/user-attachments/assets/1ba303ee-01b9-4ece-9e35-9edf2a90b44e" />
+
 
 --------
 #### **FLAG 18: DEFENSE EVASION - Process Termination**
@@ -295,7 +298,8 @@ DeviceProcessEvents
 | sort by Timestamp asc
 
 ```
-![[Pasted image 20260312163115.png]]
+<img width="906" height="231" alt="Pasted image 20260312163115" src="https://github.com/user-attachments/assets/75496729-fdce-4dbe-9865-9e0e1e1a61ff" />
+
 
 -------
 #### **FLAG 19: IMPACT - Recovery Point Deletion**
