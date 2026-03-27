@@ -22,6 +22,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
+<img width="818" height="165" alt="Pasted image 20260312071954" src="https://github.com/user-attachments/assets/77e3c6f4-b469-4bcc-91e7-8af9f71bc893" />
 
 
 
@@ -43,7 +44,8 @@ DeviceLogonEvents
 | project Timestamp, DeviceName, AccountName,RemoteIP, RemotePort, ActionType, InitiatingProcessCommandLine, IsLocalAdmin, LogonType, Protocol
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312075206.png]]
+<img width="1046" height="203" alt="Pasted image 20260312075206" src="https://github.com/user-attachments/assets/1c32ec55-b9fb-48fb-a281-974dd62955cf" />
+
 
 ---------
 #### **FLAG 3: CREDENTIAL ACCESS - Compromised Account**
@@ -71,7 +73,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312081312.png]]
+<img width="839" height="354" alt="Pasted image 20260312081312" src="https://github.com/user-attachments/assets/bfa23d44-cd79-4e8c-8f66-c52322f7b7b2" />
+
 
 ----------
 #### **FLAG 5: DISCOVERY - File Search**
@@ -89,7 +92,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312081615.png]]
+<img width="713" height="151" alt="Pasted image 20260312081615" src="https://github.com/user-attachments/assets/31d09c50-17ec-4783-a175-1c44f6fc1622" />
 
 ----------
 
@@ -106,7 +109,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312082902.png]]
+<img width="788" height="166" alt="Pasted image 20260312082902" src="https://github.com/user-attachments/assets/3e3345f2-bf09-48f9-a05a-62aa6235539f" />
+
 
 -----------
 #### **FLAG 7: DISCOVERY - Scheduled Job Reconnaissance**
