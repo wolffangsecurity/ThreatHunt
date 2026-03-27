@@ -314,7 +314,8 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312163648.png]]
+<img width="886" height="92" alt="Pasted image 20260312163648" src="https://github.com/user-attachments/assets/64b7ae86-904d-4eab-8290-20e70be714a7" />
+
 
 --------------
 #### **FLAG 20: IMPACT - Storage Limitation**
@@ -329,7 +330,7 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312164539.png]]
+<img width="981" height="94" alt="Pasted image 20260312164539" src="https://github.com/user-attachments/assets/890d165a-ad0d-4761-b620-f9850faff2e1" />
 
 ---------
 #### **FLAG 21: IMPACT - Recovery Disabled**
@@ -345,14 +346,14 @@ DeviceProcessEvents
 | sort by Timestamp asc
 
 ```
-![[Pasted image 20260312165230.png]]
+<img width="1198" height="91" alt="Pasted image 20260312165230" src="https://github.com/user-attachments/assets/7adc96ac-ed99-4286-9b60-ff008b35e186" />
+
 
 -----------
 #### **FLAG 22: IMPACT - Catalog Deletion**
 - Finding: Backup catalogues track available restore points and backup versions.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)
 - `"wbadmin" delete catalog -quiet`
-![[Pasted image 20260312165858.png]]
 
 ```SQL
 DeviceProcessEvents
@@ -360,6 +361,8 @@ DeviceProcessEvents
 | project Timestamp, AccountName, FileName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
+<img width="810" height="74" alt="Pasted image 20260312165858" src="https://github.com/user-attachments/assets/6f845e05-c914-4ef4-9f92-93292097ac04" />
+
 ---------
 ### PHASE 4: PERSISTENCE (FLAGS 23-24)  
 #### FLAG 23: PERSISTENCE - Registry Autorun
@@ -376,7 +379,8 @@ DeviceRegistryEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, RegistryValueName, RegistryKey, ActionType
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312173218.png]]
+<img width="1059" height="227" alt="Pasted image 20260312173218" src="https://github.com/user-attachments/assets/f5326b17-5a06-4228-b211-c34d017d3d8b" />
+
 
 ---------
 #### **FLAG 24: PERSISTENCE - Scheduled Execution**
@@ -393,7 +397,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, InitiatingProcessVersionInfoInternalFileName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312174606.png]]
+<img width="1453" height="208" alt="Pasted image 20260312174606" src="https://github.com/user-attachments/assets/d26fe377-e546-40b5-b190-769f1f30f79a" />
+
 
 ------------
 ### PHASE 5: ANTI-FORENSICS (FLAG 25)  
@@ -411,7 +416,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, InitiatingProcessVersionInfoInternalFileName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312175135.png]]
+<img width="977" height="185" alt="Pasted image 20260312175135" src="https://github.com/user-attachments/assets/be0d848d-6db4-43d8-be3f-c6d7e9efe257" />
+
 
 ----------
 ### PHASE 6: RANSOMWARE SUCCESS (FLAG 26)  
@@ -428,4 +434,5 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, InitiatingProcessVersionInfoInternalFileName, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312175714.png]]
+<img width="1189" height="281" alt="Pasted image 20260312175714" src="https://github.com/user-attachments/assets/4c26a3e1-cc1d-48ad-a250-106628278063" />
+
