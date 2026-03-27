@@ -127,7 +127,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312083320.png]]
+<img width="858" height="94" alt="Pasted image 20260312083320" src="https://github.com/user-attachments/assets/6b2c82be-6df5-4d9f-ab94-1e2d2bb1dc3a" />
+
 
 ----------
 #### **FLAG 8: COMMAND AND CONTROL - Tool Transfer**
@@ -145,6 +146,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
+<img width="860" height="162" alt="Pasted image 20260312223230" src="https://github.com/user-attachments/assets/66f6287f-eb20-4008-b725-cbb9a5c9cb86" />
 
 ----------
 #### **FLAG 9: CREDENTIAL ACCESS - Credential Theft**
@@ -160,7 +162,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312135834.png]]
+<img width="1059" height="227" alt="Pasted image 20260312173218" src="https://github.com/user-attachments/assets/13b88055-9b42-45a7-9c3c-147f501b547b" />
+
 
 --------
 -------------
@@ -195,7 +198,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312142734.png]]
+<img width="752" height="183" alt="Pasted image 20260312142734" src="https://github.com/user-attachments/assets/06220a6d-a8e6-4e5d-af96-40cbef92fed4" />
+
 
 --------
 #### **FLAG 12: IMPACT - Service Disabled*
@@ -212,7 +216,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, FolderPath, ProcessCommandLine
 | sort by Timestamp asc
 ```
-![[Pasted image 20260312143828.png]]
+<img width="822" height="184" alt="Pasted image 20260312143828" src="https://github.com/user-attachments/assets/bbd37cdf-5465-46b3-bbc1-32dcf83c3734" />
+
 
 ------
 ### **PHASE 2: WINDOWS RANSOMWARE DEPLOYMENT (FLAGS 13-15)**  
