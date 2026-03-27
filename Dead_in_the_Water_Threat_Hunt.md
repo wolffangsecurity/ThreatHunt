@@ -1,4 +1,4 @@
-## Azuki Import/Export - 梓貿易株式会社** Incident Report
+## Azuki Import/Export - 梓貿易株式会社 Incident Report
 - **Date of Report**: 2026-03-12
 - **Incident Date:**  2025-11-27
 - **Severity Level**:  [] LOW  [] MEDIUM  [] HIGH  [X] CRITICAL 
@@ -165,7 +165,6 @@ DeviceProcessEvents
 <img width="1059" height="227" alt="Pasted image 20260312173218" src="https://github.com/user-attachments/assets/13b88055-9b42-45a7-9c3c-147f501b547b" />
 
 
---------
 -------------
 #### **FLAG 10: IMPACT - Data Destruction**
 - Findings: Destroying backups eliminates recovery options and maximizes ransomware impact.
