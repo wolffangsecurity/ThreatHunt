@@ -7,6 +7,9 @@
 - **Tools**: Log Analytics Workspace
 - **Starting Point:** `DeviceProcessEvents  | where DeviceName contains "azuki"`
 
+### Scenario
+ It's been a week since the initial compromise. You arrive Monday morning to find ransom notes across every system. The threat actors weren't just stealing data - they were preparing for total devastation.
+ 
 ### **PHASE 1: LINUX BACKUP SERVER COMPROMISE (FLAGS 1-12)**
 ---------
 #### **FLAG 1: LATERAL MOVEMENT - Remote Access**
@@ -30,7 +33,7 @@ DeviceProcessEvents
 ----------
 #### **FLAG 2: LATERAL MOVEMENT - Attack Source**
 - Findings: Identifying the attack source enables network segmentation and containment.
-- Reference: [T1021.004: Remote Services - SSH](https://attack.mitre.org/techniques/T1021/004/
+- Reference: [T1021.004: Remote Services - SSH](https://attack.mitre.org/techniques/T1021/004/)
 - IP Address: `10.1.0.108`
 
 **KQL Query: Find Attacker's IP**
@@ -201,7 +204,7 @@ DeviceProcessEvents
 
 
 --------
-#### **FLAG 12: IMPACT - Service Disabled*
+#### **FLAG 12: IMPACT - Service Disabled**
 - Findings: Disabling a service prevents it from starting at boot - this SURVIVES a reboot.
 - Reference: [T1489: Service Stop](https://attack.mitre.org/techniques/T1489/)  
 - `systemctl disable cron`
