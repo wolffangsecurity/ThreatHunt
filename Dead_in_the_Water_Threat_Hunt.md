@@ -1,3 +1,5 @@
+<img width="2000" height="1000" alt="image" src="https://github.com/user-attachments/assets/9cc5376c-3198-4a39-93bf-16d99b0e217a" />
+
 ## Azuki Import/Export - 梓貿易株式会社 Incident Report
 - **Date of Report**: 2026-03-12
 - **Incident Date:**  2025-11-27
