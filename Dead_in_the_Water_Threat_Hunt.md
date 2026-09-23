@@ -104,7 +104,6 @@ DeviceProcessEvents
 #### **FLAG 6: DISCOVERY - Account Enumeration**
 - Findings: Attackers enumerate local accounts to understand the system's user base.
 - Reference: [T1087.001: Account Discovery - Local Account](https://attack.mitre.org/techniques/T1087/001/)  
-- xxxxxxxxxxxxx
 
 ```SQL
 DeviceProcessEvents
